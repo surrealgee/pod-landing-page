@@ -1,12 +1,15 @@
 /* Base */
 
 body {
+    background-blend-mode: overlay;
     background-color: #121725;
     background-image: url(./assets/mobile/image-host.jpg);
-    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
-    font-family: "Chivo", sans-serif;
+    font-family: "Chivo", serif;
     font-size: 1rem;
+    font-weight: 300;
     line-height: 1.6;
     padding: 3.875em 1.5em 1.5em;
     min-height: 100vh;
@@ -82,5 +85,75 @@ body {
 @media screen and (max-width: 320px) {
     .content {
         margin-top: 1.5em;
-    }    
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-blend-mode: normal;
+        background-image: url(./assets/tablet/image-host.jpg);
+        background-position: top right;
+        background-size: initial;
+        position: relative;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    .content {
+        align-items: flex-start;
+        background-color: #121725;
+        display: flex;
+        flex-direction: column;
+        margin: 9.5em 2.5em;
+        max-width: 635px;
+        padding: 5.8em 0;
+        text-align: left;
+
+        .content_title {
+            font-size: 3rem;
+            line-height: 1.17;
+        }
+
+        .content_body {
+            font-size: 1.125rem;
+            margin-top: 2rem;
+            max-width: 445px;
+        }
+
+        .content_platforms {
+            order: 2;
+            margin-top: 2.5rem;
+        }
+
+        .content_form {
+            flex-direction: row;
+            margin-top: 2.5rem;
+            position: relative;
+            width: 427px;
+
+            .email-field {
+                flex: 1;
+            }
+
+            .submit-btn {
+                position: absolute;
+                right: 0;
+                padding: 0.625rem 1.75rem;
+            }
+        }
+    }
+
+    .pattern_overlay {
+        background-image: url(./assets/desktop/bg-pattern-dots.svg);
+        height: 104px;
+        width: 232px;
+        position: absolute;
+        left: 30px;
+        bottom: 0;
+    }
+
+
+
 }
