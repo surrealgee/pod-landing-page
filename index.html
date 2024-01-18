@@ -34,12 +34,16 @@
                 <img src="./assets/desktop/pocket-casts.svg" alt="pocket-casts' logo">
             </a>
         </div>
-        <form action="#" class="content_form">
-            <input class="email-field" type="email" name="email" placeholder="Email address">
-            <button type="button" class="submit-btn">Request Access</button>
+        <form action="" class="content_form" novalidate>
+            <input class="email-field" type="email" name="email" placeholder="Email address" required>
+            <span class="error"></span>
+            <button type="submit" class="submit-btn">Request Access</button>
+
+
         </form>
     </main>
     <div class="pattern_overlay"></div>
+    <script src="main.js"></script>
 </body>
 
 </html>
